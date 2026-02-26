@@ -1,5 +1,5 @@
 ocena_kredytowa = function(dochod, zadluzenie) {
-  udzial = (zadluzenie/dochod)
+  udzial = zadluzenie/dochod
   
   if (udzial < 0.30) {
     return("KREDYT PRZYZNANY")
@@ -14,4 +14,5 @@ ocena_kredytowa = function(dochod, zadluzenie) {
 
 print(ocena_kredytowa(1000, 200))
 print(ocena_kredytowa(3000, 1200))
+
 print(ocena_kredytowa(10000, 6000))
